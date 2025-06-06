@@ -1,0 +1,37 @@
+{
+  "reservas": [
+    {
+      "id": "201",
+      "usuarioId": 33,
+      "nomeUsuario": "Ana Pereira",
+      "mesa": "Mesa 1",
+      "data": "2025-06-01",
+      "horario": "18:30",
+      "status": "confirmada",
+      "restaurante": "Restaurante Bella Massa",
+      "imagem": "https://plus.unsplash.com/premium_photo-1670984940113-f3aa1cd1309a?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmVzdGF1cmFudGVzfGVufDB8fDB8fHww"
+    },
+    {
+      "id": "202",
+      "usuarioId": 33,
+      "nomeUsuario": "Ana Pereira",
+      "mesa": "Mesa 3",
+      "data": "2025-06-02",
+      "horario": "20:00",
+      "status": "Cancelada",
+      "restaurante": "Restaurante Bella Massa",
+      "imagem": "https://plus.unsplash.com/premium_photo-1670984940113-f3aa1cd1309a?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmVzdGF1cmFudGVzfGVufDB8fDB8fHww"
+    },
+    {
+      "id": "203",
+      "usuarioId": 33,
+      "nomeUsuario": "Ana Pereira",
+      "mesa": "Mesa 5",
+      "data": "2025-06-03",
+      "horario": "19:00",
+      "status": "Cancelada",
+      "restaurante": "Restaurante Bella Massa",
+      "imagem": "https://plus.unsplash.com/premium_photo-1670984940113-f3aa1cd1309a?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmVzdGF1cmFudGVzfGVufDB8fDB8fHww"
+    }
+  ]
+}

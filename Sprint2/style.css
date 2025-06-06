@@ -1,0 +1,35 @@
+/* estilos.css */
+body {
+  background-color: #FFFDD0; /* Creme */
+  color: #333333; /* Cinza Escuro */
+}
+
+.navbar {
+  background-color: #8B0000; /* Vinho */
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: #FFFDD0 !important; /* Creme */
+}
+
+.table thead {
+  background-color: #8B0000; /* Vinho */
+  color: #FFFDD0; /* Creme */
+}
+
+.btn-danger {
+  background-color: #D4AF37; /* Dourado */
+  border-color: #D4AF37;
+  color: #FFFDD0; /* Texto claro */
+}
+
+.btn-danger:hover {
+  background-color: #b9972f;
+  border-color: #b9972f;
+  color: #FFFDD0;
+}
+
+h1 {
+  color: #8B0000;
+}
