@@ -33,6 +33,7 @@ header .logo {
   font-size: 1.5rem;
 }
 
+/* Estilos originais dos links no Desktop */
 header nav a,
 .btn-link {
   background-color: var(--dourado);
@@ -45,39 +46,56 @@ header nav a,
   text-decoration: none;
 }
 
+/* Oculta o botão de menu (que não terá funcionalidade JS) */
 .menu-toggle {
-  font-size: 1.5rem;
-  cursor: pointer;
   display: none;
 }
 
+/* --- Início das Regras de Responsividade --- */
+
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
+  /* O cabeçalho empilha o logo e a navegação verticalmente */
+  header {
+    flex-direction: column;
+    gap: 1rem; /* Espaçamento entre o logo e a barra de navegação */
   }
 
+  /* Garante que a navegação (originalmente a sidebar) fique visível */
   nav#sidebar {
     display: flex;
-    flex-direction: column;
-    background-color: var(--vinho);
-    padding: 1rem;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 200px;
-    z-index: 100;
+    justify-content: center; /* Centraliza os links */
+    flex-wrap: wrap;
+    position: static; /* Remove o posicionamento absoluto */
+    background-color: transparent; /* Remove o fundo da sidebar */
+    width: auto; /* Remove a largura fixa */
+    padding: 0;
   }
-
+  
+  /* Remove a regra que esconde a navegação */
   nav#sidebar.hidden {
-    display: none;
+    display: flex;
   }
 
+  /* Ajusta os links dentro da navegação para telas pequenas */
   nav#sidebar a {
-    margin: 0.5rem 0;
+    margin: 0.25rem; /* Reduz a margem para caberem melhor */
     color: var(--branco);
     text-decoration: none;
   }
+
+  /* Ajusta o padding das seções principais */
+  .restaurantes, main[style] {
+    padding: 1rem !important;
+  }
+  
+  /* Ajusta os cards para telas menores */
+  .card {
+    width: 90%; /* Ocupa mais espaço horizontal na tela */
+    max-width: 350px; /* Limita a largura máxima para consistência */
+  }
 }
+
+/* --- Fim das Regras de Responsividade --- */
 
 .carousel {
   display: flex;
